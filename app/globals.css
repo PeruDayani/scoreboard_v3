@@ -5,7 +5,6 @@
   --foreground: #171717;
 }
 
-/* Scoreboard route theme — tokens only apply under this scope */
 .scoreboard-theme {
   --background: #f0efeb;
   --foreground: #1a1a1a;
@@ -15,6 +14,20 @@
   --sage: #7c8d7d;
   --terracotta: #d9966e;
   --border: #d9d6cf;
+
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.fantasy-theme {
+  --background: #f6f1f3;
+  --foreground: #2a2226;
+  --muted: #8a737c;
+  --rose: #e9e0e4;
+  --mist: #d9cdd2;
+  --sage: #f0e8eb;
+  --terracotta: #b294a0;
+  --border: #d9cdd2;
 
   background: var(--background);
   color: var(--foreground);

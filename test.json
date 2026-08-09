@@ -1,0 +1,197 @@
+{
+  "id": "2026-all-star",
+  "name": "2026 All Star",
+  "captains": {
+    "teamA": "P. Dayani",
+    "teamB": "H. Davila"
+  },
+  "games": [
+    {
+      "gameId": "0032500011",
+      "teams": {
+        "teamA": [
+          {
+            "playerId": 1641705,
+            "playerName": "Victor Wembanyama",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 1
+          },
+          {
+            "playerId": 1630178,
+            "playerName": "Tyrese Maxey",
+            "teamId": 1610616859,
+            "teamName": "Stars",
+            "draftPick": 3
+          },
+          {
+            "playerId": 1626157,
+            "playerName": "Karl-Anthony Towns",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 5
+          },
+          {
+            "playerId": 1626164,
+            "playerName": "Devin Booker",
+            "teamId": 1610616859,
+            "teamName": "Stars",
+            "draftPick": 7
+          },
+          {
+            "playerId": 1626181,
+            "playerName": "Norman Powell",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 9
+          },
+          {
+            "playerId": 1630552,
+            "playerName": "Jalen Johnson",
+            "teamId": 1610616859,
+            "teamName": "Stars",
+            "draftPick": 11
+          },
+          {
+            "playerId": 1627783,
+            "playerName": "Pascal Siakam",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 13
+          },
+          {
+            "playerId": 1630166,
+            "playerName": "Deni Avdija",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 15
+          },
+          {
+            "playerId": 1630578,
+            "playerName": "Alperen Sengun",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 17
+          },
+          {
+            "playerId": 1628983,
+            "playerName": "Shai Gilgeous-Alexander",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 19
+          }
+        ],
+        "teamB": [
+          {
+            "playerId": 1630595,
+            "playerName": "Cade Cunningham",
+            "teamId": 1610616859,
+            "teamName": "Stars",
+            "draftPick": 2
+          },
+          {
+            "playerId": 1627750,
+            "playerName": "Jamal Murray",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 4
+          },
+          {
+            "playerId": 1630162,
+            "playerName": "Anthony Edwards",
+            "teamId": 1610616859,
+            "teamName": "Stars",
+            "draftPick": 6
+          },
+          {
+            "playerId": 1631105,
+            "playerName": "Jalen Duren",
+            "teamId": 1610616859,
+            "teamName": "Stars",
+            "draftPick": 8
+          },
+          {
+            "playerId": 1629029,
+            "playerName": "Luka Dončić",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 10
+          },
+          {
+            "playerId": 203999,
+            "playerName": "Nikola Jokić",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 12
+          },
+          {
+            "playerId": 1630567,
+            "playerName": "Scottie Barnes",
+            "teamId": 1610616859,
+            "teamName": "Stars",
+            "draftPick": 14
+          },
+          {
+            "playerId": 1631096,
+            "playerName": "Chet Holmgren",
+            "teamId": 1610616859,
+            "teamName": "Stars",
+            "draftPick": 16
+          },
+          {
+            "playerId": 203507,
+            "playerName": "Giannis Antetokounmpo",
+            "teamId": 1610616861,
+            "teamName": "World",
+            "draftPick": 18
+          }
+        ]
+      }
+    },
+    {
+      "gameId": "0032500021",
+      "teams": {
+        "teamA": [],
+        "teamB": []
+      }
+    },
+    {
+      "gameId": "0032500031",
+      "teams": {
+        "teamA": [],
+        "teamB": []
+      }
+    }
+  ],
+  "statistics": [
+    {
+      "key": "pointsInsideTheArc",
+      "label": "Two-pointers + FT made"
+    },
+    {
+      "key": "threePointersMade",
+      "label": "Three-pointers made"
+    },
+    {
+      "key": "assists",
+      "label": "Assists"
+    },
+    {
+      "key": "hustle",
+      "label": "Hustle (BLK + STL − TO)"
+    },
+    {
+      "key": "reboundsTotal",
+      "label": "Total rebounds"
+    }
+  ],
+  "captainA": "peru",
+  "captainB": "hayden",
+  "selectedStats": [
+    "pointsInsideTheArc",
+    "threePointersMade",
+    "assists",
+    "hustle",
+    "reboundsTotal"
+  ]
+}

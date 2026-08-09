@@ -15,3 +15,17 @@ export function formatReadableDate(date: string): string {
     timeZone: "UTC",
   }).format(parsed);
 }
+
+/** Formats an ISO datetime as a readable tipoff, e.g. "Sat, Jun 22, 2025, 7:30 PM PDT". */
+export function formatReadableDateTime(iso: string): string {
+  return new Intl.DateTimeFormat("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    timeZoneName: "short",
+  }).format(new Date(iso));
+}
+

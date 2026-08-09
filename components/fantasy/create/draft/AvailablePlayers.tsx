@@ -23,7 +23,7 @@ export default function AvailablePlayers({
     );
   }
 
-  const sorted = [...players].sort((a, b) => a.name.localeCompare(b.name));
+  const sorted = [...players].sort((a, b) => a.order - b.order);
 
   return (
     <div className="flex flex-col gap-3">

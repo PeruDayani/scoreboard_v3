@@ -55,6 +55,9 @@ export type FantasyPlayer = {
   familyName: string;
   teamId: number;
   teamName: string;
+  position: string;
+  starter: boolean;
+  order: number;
   statistics: FantasyPlayerStatistics;
 };
 

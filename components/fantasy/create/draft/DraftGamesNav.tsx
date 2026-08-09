@@ -16,7 +16,7 @@ export default function DraftGamesNav({
       <p className="text-center text-xs font-medium tracking-[0.2em] text-muted uppercase">
         Draft {gameCount} games
       </p>
-      <nav className="flex flex-wrap items-center justify-between gap-3">
+      <nav className="flex flex-wrap items-center justify-center gap-8">
         {gameIds.map((gameId, index) => {
           const isActive = index === activeIndex;
 

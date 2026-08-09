@@ -82,3 +82,22 @@ export type FantasyStatisticOption = {
   key: keyof FantasyPlayerStatistics;
   label: string;
 };
+
+export type FantasyTeamScore = {
+  players: (FantasyPlayer & FantasyDraftPick)[];
+  statistics: FantasyPlayerStatistics;
+};
+
+export type FantasyDraftScore = {
+  id: string;
+  name: string;
+  captains: FantasyDraftConfig["captains"];
+  statistics: FantasyDraftConfig["statistics"];
+  games: {
+    gameId: string;
+    teams: {
+      teamA: FantasyTeamScore;
+      teamB: FantasyTeamScore;
+    };
+  }[];
+};

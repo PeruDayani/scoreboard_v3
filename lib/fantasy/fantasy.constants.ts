@@ -553,12 +553,12 @@ export const FANTASY_DRAFTS: FantasyDraftConfig[] = [
         label: 'Assists'
       },
       {
-        key: 'hustle',
-        label: 'Hustle'
-      },
-      {
         key: 'reboundsTotal',
         label: 'Rebounds'
+      },
+      {
+        key: 'hustle',
+        label: 'Hustle'
       }
     ]
   },

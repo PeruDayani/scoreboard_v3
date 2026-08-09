@@ -1,3 +1,5 @@
+export type DraftTeamKey = "teamA" | "teamB";
+
 export type FantasyDraftConfig = {
   id: string;
   name: string;
@@ -5,19 +7,12 @@ export type FantasyDraftConfig = {
     teamA: string;
     teamB: string;
   }
-  games: {
-    gameId: string;
-    teams: {
-      teamA: FantasyDraftPick[];
-      teamB: FantasyDraftPick[];
-    };
-  }[],
+  games: FantasyDraftGame[],
   statistics: {
     key: keyof FantasyPlayerStatistics;
     label: string;
   }[]
 }
-
 export type FantasyDraftPick = {
   playerId: number;
   playerName: string;
@@ -26,7 +21,13 @@ export type FantasyDraftPick = {
   draftPick: number;
 }
 
-export type DraftTeamKey = "teamA" | "teamB";
+export type FantasyDraftGame = {
+  gameId: string;
+  teams: {
+    teamA: FantasyDraftPick[];
+    teamB: FantasyDraftPick[];
+  };
+};
 
 export type FantasyBoxscore = {
   gameId: string;
@@ -83,21 +84,39 @@ export type FantasyStatisticOption = {
   label: string;
 };
 
+export type FantasyDraftResult = {
+  id: string;
+  name: string;
+  captains: {
+    teamA: string;
+    teamB: string;
+  };
+  result: FantasyGameResult;
+  scores: FantasyGameScore[];
+};
+
+export type FantasyDraftWinner = DraftTeamKey | 'draw';
+
+export type FantasyGameResult = {
+  winner: FantasyDraftWinner;
+  statisticsTotals: {
+    key: keyof FantasyPlayerStatistics;
+    label: string;
+    teamAScore: number;
+    teamAScorePerGame?: number[]
+    teamBScore: number;
+    teamBScorePerGame?: number[]
+    winner: FantasyDraftWinner;
+  }[];
+}
+
 export type FantasyTeamScore = {
-  players: (FantasyPlayer & FantasyDraftPick)[];
+  players: (FantasyPlayer & { draftPick: number })[];
   statistics: FantasyPlayerStatistics;
 };
 
-export type FantasyDraftScore = {
-  id: string;
-  name: string;
-  captains: FantasyDraftConfig["captains"];
-  statistics: FantasyDraftConfig["statistics"];
-  games: {
-    gameId: string;
-    teams: {
-      teamA: FantasyTeamScore;
-      teamB: FantasyTeamScore;
-    };
-  }[];
+export type FantasyGameScore = {
+  gameId: string;
+  teams: Record<DraftTeamKey, FantasyTeamScore>;
+  result: FantasyGameResult;
 };

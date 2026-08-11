@@ -12,7 +12,7 @@ export default function FantasyPage() {
   return (
     <div className="mx-auto w-full max-w-3xl px-6 text-center">
       <Nav />
-      <ul className="mt-4 flex flex-col gap-0 text-center">
+      <ul className="mt-4 flex flex-col gap-0 text-center [&>li:first-child>a]:pt-0">
         {FANTASY_DRAFTS.map((draft) => (
           <li key={draft.id}>
             <Link

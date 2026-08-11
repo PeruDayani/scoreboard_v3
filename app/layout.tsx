@@ -8,8 +8,16 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://scoreboard-v3.vercel.app"),
   title: "Basketball Projects",
   description: "Hidden scoreboard for basketball games & fantasy drafts.",
+  openGraph: {
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
